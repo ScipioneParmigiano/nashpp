@@ -21,18 +21,12 @@ Using Nashpp is simple and straightforward. Users can include the library in the
 
 int main() {
     // Define a 2x2 matrix game
-    NashMatrix game({{3, 2}, {1, 4}});
+    std::vector<std::vector<int>> payoffA = {{4, 2}, {1, 4}};
+    std::vector<std::vector<int>> payoffB = {{4, 1}, {2, 4}};
+    NashMatrix game(payoffA, payoffB);
 
     // Compute Nash equilibria
-    auto equilibria = game.computeNashEquilibria();
-
-    // Print the computed Nash equilibria
-    std::cout << "Nash Equilibria:" << std::endl;
-    for (const auto& eq : equilibria) {
-        std::cout << "Player 1 strategy: " << eq.first << ", Player 2 strategy: " << eq.second << std::endl;
-    }
-
-    return 0;
+    game.findNashEquilibria();
 }
 ```
 
