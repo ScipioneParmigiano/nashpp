@@ -1,7 +1,7 @@
-#include "../nashmatrix.h"
+#include "../src/nashmatrix.h"
 #include <iostream>
 #include <tuple>
-#include "../nashmatrix.cpp"
+#include "../src/nashmatrix.cpp"
 
 
 int main() {
