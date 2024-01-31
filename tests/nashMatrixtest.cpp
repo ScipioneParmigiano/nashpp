@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
-#include "../nashmatrix.h"
-#include "../nashmatrix.cpp"
+#include "../src//nashmatrix.h"
+#include "../src/nashmatrix.cpp"
 
 void testConstructor() {
     // Test constructor initialization
